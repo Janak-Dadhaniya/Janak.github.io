@@ -1,0 +1,40 @@
+.main-section{
+/* background-color: red; */
+
+margin-top: 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.calculator{
+    background-color: rgb(0, 0, 0);
+}
+.display{
+    height: 110px;
+    width: 462px;
+    border: 2px solid black;
+    font-size: 2.5rem;
+    /* overflow-x: scroll; */
+}
+.input{
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    height: inherit;
+    font-size: 2.5rem;
+}
+.button{
+    height: 110px;
+    width: 110px;
+    color: white;
+    background-color: rgb(83, 80, 80);
+    font-size: 2.5rem;
+    margin: 2px;
+
+    cursor: pointer;
+    border-radius: 20%;
+}
+.zero-btn{
+    width: 223px;
+}

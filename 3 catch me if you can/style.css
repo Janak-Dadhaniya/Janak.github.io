@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+    width: 90vw;
+    height: 90vh;
+}
+
+.theaf{
+    text-align: center;
+    height: 90px;
+    width: 90px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 30px;
+    position: relative;
+    top: 100px;
+    left: 0;
+    cursor: pointer;
+}

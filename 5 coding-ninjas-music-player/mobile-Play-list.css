@@ -1,0 +1,267 @@
+/* #navebar section  */
+nav ul li{
+    padding: 0 8px 0 0;
+}
+.brand{
+    font-size: 0.8rem;
+}
+.brand img{
+    height: 1.3rem;
+    padding: 0 6px 0 0px;
+}
+.Favourites {
+    left: 85px;
+    font-size: 0.7rem;
+}
+.search-bar{
+    right: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.search-ico{
+    font-size: 0.6rem !important;
+}
+.mic-ico{
+    font-size: 0.6rem !important;
+
+}
+.search-bar input{
+    width: 2.9rem;
+    font-size: 0.6rem;
+}
+.notifaction{
+    right: 30px;
+}
+.notifaction img{
+    height: 18px;
+}
+.user-profile img {
+    height: 20px;    
+}
+
+/* main container section */
+
+.container{
+    height: 82vh ;
+    width: 100%;
+    padding: 0;
+
+}
+main{
+width: 65%;
+height: 100%;
+}
+.artist-info{
+    height: 220px;
+    flex-direction: column;
+    align-items: center;
+}
+.artist-img{
+    width: 120px;
+   
+    height: 135px;
+}
+.artist-img img{
+    border-radius: 50%;
+}
+.artist-details{
+    width: 160px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.artist-name{
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2px;
+}
+.artist-name h1{
+    font-size: 0.7rem;
+}
+.artist-name p{
+    font-size: 0.5rem;
+}
+.artist-band{
+    padding: 0;
+}
+.artist-band p{
+    font-size: 0.45rem;
+    
+}
+.about-artist span{
+    display: none;
+}
+.about-artist p{
+    font-size: 0.5rem;
+    
+}
+.artist-play-btn{
+    width: 70px;
+    height: 20px;
+    margin-top: 2px;
+}
+.artist-play-btn button{
+    width: 40px;
+    font-size: 0.5rem;
+}
+.artist-play-btn span{
+    font-size: 0.5rem;
+}
+
+.left{
+    width: 60%;
+}
+.number{
+    font-size: 0.5rem;
+    margin-right: 2px;
+}
+.img-and-btn img{
+    height: 37px;
+}
+.play-btn{
+    height: 37px;
+    width: 37px;
+    left: -37px;
+}
+.song-name{
+    margin-left: -35px;
+    width: 150px;
+}
+.song-name h5{
+    font-size: 0.55rem;
+}
+.song-name p{
+    font-size: 0.4rem;
+}
+.center{
+    font-size: 0.4rem;
+}
+
+/* aside  */
+aside{
+    width: 35%;
+}
+.similer-artist-heading h1{
+    font-size: 0.6rem;
+}
+.similer-artist-heading p{
+    font-size: 0.4rem;
+}
+.similar-Artist-list-items{
+    margin-top: 7px;
+}
+.similar-artist-img img{
+    height: 40px;
+}
+.similar-artist-play-btn{
+    height: 40px;
+    width: 40px;
+    left: -40px;
+
+}
+.similar-artist-name{
+    margin-left: -35px;
+}
+.similar-artist-name h4{
+    font-size: 0.5rem;
+}
+.similar-artist-name p{
+    font-size: 0.4rem;
+}
+.similar-artist-e-btn{
+    margin-left: 3px;
+}
+.fa-ellipsis-h{
+    width: 8px !important;
+    height: 8px !important;
+}
+.similar-art-time{
+    font-size: 0.38rem;
+}
+
+/* recently played secrtion  */
+
+.recently-played-heading h1{
+    font-size: 0.6rem;
+}
+.recently-played-heading p{
+    font-size: 0.4rem;
+}
+.recently-play-list{
+    margin-top: 8px;
+}
+.recently-play-img:nth-child(1){
+    font-size: 0.4rem !important;
+}
+.number-re{
+    font-size: 0.45rem !important;
+}
+.recently-play-img img{
+    height: 35px;
+}
+.recently-play-btn{
+    height: 35px;
+    width: 35px;
+    left: -35px;
+}
+.recently-play-name{
+    margin-left: -35px;
+    width: 40%;
+}
+.recently-play-name h4{
+    font-size: 0.5rem ;
+
+}
+.recently-play-name p{
+    font-size: 0.4rem;
+}
+.recently-hart{
+  
+    height: 8px !important;
+    width: 8px!important;
+}
+
+
+
+
+
+
+/* #footer  */
+
+footer{
+    height: 40px;
+}
+.active-songs{
+    width: 100px;
+}
+.song-img img{
+    height: 39px;
+}
+.song-desc div:nth-child(1){
+    font-size: 0.65rem;
+}
+.song-desc div:nth-child(2) {
+    font-size: 0.47rem;
+}
+.fa-random{
+    font-size: 0.47rem !important;
+}
+.fa-step-backward{
+    font-size: 0.47rem !important;
+}
+.fa-pause-circle{
+    font-size: 0.47rem !important;
+}
+.fa-step-forward{
+    font-size: 0.47rem !important;
+}
+.fa-redo{
+    font-size: 0.47rem !important;
+
+}
+.time{
+font-size: 0.4rem;
+}

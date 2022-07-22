@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="music player">
+    <title>Ninja Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 700px)" href="mobile-style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"> <a href="index.html"> <img src="./image/spotify.png" alt="spotify">Spotify</a></li>
+            <li class="Favourites">Favourites</li>
+            <li class="search-bar">
+                <i class="fas fa-search search-ico" style="font-size:1.6vw;"></i>
+                <input type="text" name="Search" id="" placeholder="Search">
+                <i class="fas fa-microphone mic-ico" style="font-size:1.6vw;"></i>
+            </li>
+            <li class="notifaction"><img src="./image/bell_icon.png" alt=""></li>
+            <li class="user-profile"><img src="./image/profile_picture.png" alt=""></li>
+
+        </ul>
+    </nav>
+    <div id="container">
+        <main class="Main-section">
+            <!-- carousel section  -->
+            <div class="outer-carousel">
+                <div class="carousel">
+                    <img src="./image/crousel/carousel1.jpg" alt="">
+                    <img src="./image/crousel/carousel2.jpg" alt="">
+                    <img src="./image/crousel/carousel3.jpg" alt="">
+                </div>
+            </div>
+            <!-- new realese songs  -->
+            <div class="latest-release">
+                <h1>Latest Release</h1>
+                <div class="latest-realese-content">
+
+                    <!-- latest-release cards  -->
+                    <!-- card 1  -->
+                    <div class="card">
+                        <div class="latest-realese-img">
+                            <img src="./image/latestrealese/Hari-Har-From-Prithviraj-Hindi-2022-20220512111948-500x500.jpg"
+                                alt="Hari-har" srcset="">
+                        </div>
+                        <div class="play-button">
+                            <i class="fas fa-play play-bt"
+                                style="color: rgb(103, 104, 106); width: 30%; height: 30%;"></i>
+                        </div>
+                        <div class="song-details">
+                            <h3>
+                                Hari-Har
+                            </h3>
+                            <p>
+                                May , 2022
+                            </p>
+                        </div>
+                        <div class="options">
+                            <label for="latest-release-checkbox"><i class="fas fa-ellipsis-h" style="font-size:1.5vw ;"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox">
+                            <div class="latest-release-dropdown">
+                                <div class="drop-item">
+                                     
+                                    <p><i class="fas fa-play-circle"></i> <a href="Playlist Screen.html">Play
+                                            Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <button><i class="fas fa-list-ul"></i> Add to Queue</button>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <button><i class="fas fa-music"></i> Add to playlist<button></i>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <button><i class="fas fa-info-circle"></i> Get Info</button>
+                                </div>
+                            </div>
+
+                            <p>
+                                2:55
+                            </p>
+                        </div>
+                    </div>
+                    <!--  latest realese card-2  -->
+                    <div class="card">
+                        <div class="latest-realese-img">
+                            <img src="./image/latestrealese/Hold-My-Hand-Music-From-The-Motion-Picture-Top-Gun-Maverick-English-2022-20220503103602-500x500.jpg"
+                                alt="Hold-My-Hand" srcset="">
+                        </div>
+                        <div class="play-button">
+                            <i class="fas fa-play play-bt"
+                                style="color: rgb(103, 104, 106); width: 30%; height: 30%;"></i>
+                        </div>
+                        <div class="song-details">
+                            <h3>
+                                Hold-My-Hand
+                            </h3>
+                            <p>
+                                Feb , 2022
+                            </p>
+                        </div>
+                        <div class="options">
+                            <label for="latest-release-checkbox2"><i class="fas fa-ellipsis-h" style="font-size:1.5vw ;"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox2">
+                            <div class="latest-release-dropdown">
+                                <div class="drop-item">
+                                   
+                                    <p><i class="fas fa-play-circle"></i> <a href="Playlist Screen.html">Play
+                                            Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <button><i class="fas fa-list-ul"></i> Add to Queue</button>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <button><i class="fas fa-music"></i> Add to playlist<button></i>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <button><i class="fas fa-info-circle"></i> Get Info</button>
+                                </div>
+                            </div>
+
+                            <p>
+                                3:35
+                            </p>
+                        </div>
+                    </div>
+                    <!-- latest-release card 3  -->
+                    <div class="card">
+                        <div class="latest-realese-img">
+                            <img src="./image/latestrealese/Can-t-Stop-Us-Now-English-2022-20220428233300-500x500.jpg"
+                                alt="Hari-har" srcset="">
+                        </div>
+                        <div class="play-button">
+                            <i class="fas fa-play play-bt"
+                                style="color: rgb(103, 104, 106); width: 30%; height: 30%;"></i>
+                        </div>
+                        <div class="song-details">
+                            <h3>
+                                Can-t-Stop-us
+                            </h3>
+                            <p>
+                                March , 2022
+                            </p>
+                        </div>
+                        <div class="options">
+                            <label for="latest-release-checkbox3"><i class="fas fa-ellipsis-h" style="font-size:1.5vw ;"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox3">
+                            <div class="latest-release-dropdown">
+                                <div class="drop-item">
+                                    
+                                    <p><i class="fas fa-play-circle"></i> <a href="Playlist Screen.html">Play
+                                            Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <button><i class="fas fa-list-ul"></i> Add to Queue</button>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <button><i class="fas fa-music"></i> Add to playlist<button></i>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <button><i class="fas fa-info-circle"></i> Get Info</button>
+                                </div>
+                            </div>
+
+                            <p>
+                                2:15
+                            </p>
+                        </div>
+                    </div>
+                    <!-- latest-release card 4  -->
+                    <div class="card">
+                        <div class="latest-realese-img">
+                            <img src="./image/latestrealese/Attack-Hindi-2022-20220313112514-500x500.jpg" alt="Ik Tu Hai"
+                                srcset="">
+                        </div>
+                        <div class="play-button">
+                            <i class="fas fa-play play-bt"
+                                style="color: rgb(103, 104, 106); width: 30%; height: 30%;"></i>
+                        </div>
+                        <div class="song-details">
+                            <h3>
+                                Ek Tu Hai
+                            </h3>
+                            <p>
+                                May , 2022
+                            </p>
+                        </div>
+                        <div class="options">
+                            <label for="latest-release-checkbox4"><i class="fas fa-ellipsis-h" style="font-size:1.5vw ;"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox4">
+                            <div class="latest-release-dropdown">
+                                <div class="drop-item">
+
+                                    <p><i class="fas fa-play-circle"></i> <a href="Playlist Screen.html">Play
+                                            Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <button><i class="fas fa-list-ul"></i> Add to Queue</button>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <button><i class="fas fa-music"></i> Add to playlist<button></i>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <button><i class="fas fa-info-circle"></i> Get Info</button>
+                                </div>
+                            </div>
+
+                            <p>
+                                1:43
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-artist">
+                <h1> Popular Artist</h1>
+                <div class="popular-artist-content">
+
+                    <a href="Playlist Screen.html">
+                        <div>
+                            <img src="./image/popular-artist/Arijit Singh.jpg">
+                            <div><i class="fas fa-play" style="color:white ;width: 22%; height: 22%;"></i></div>
+                            <p>
+                                Arijit Singh
+                            </p>
+                        </div>
+                    </a>
+                    <!-- second-artist  -->
+                    <a href="Playlist Screen.html">
+                        <div>
+                            <img src="./image/popular-artist/ariana Grande.jpg">
+                            <div><i class="fas fa-play" style="color:white ;width: 22%; height: 22%; "></i></div>
+                            <p>
+                                Ariana Grande
+                            </p>
+                        </div>
+                    </a>
+                    <!-- third-artist  -->
+                    <a href="Playlist Screen.html">
+                        <div>
+                            <img src="./image/popular-artist/A. R. Rahman.jpg">
+                            <div><i class="fas fa-play" style="color:white ;width: 22%; height: 22%;"></i></div>
+                            <p>
+                                A. R. Rahman
+                            </p>
+                        </div>
+                    </a>
+                    <!-- fourth-artist  -->
+                    <a href="Playlist Screen.html">
+                        <div>
+                            <img src="./image/popular-artist/justin-biber.jpg">
+                            <div><i class="fas fa-play" style="color:white ;width: 22%; height: 22%;"></i></div>
+                            <p>
+                                justin Biber
+                            </p>
+                        </div>
+                    </a>
+                    <!-- fifth-artist  -->
+                    <a href="Playlist Screen.html">
+                        <div>
+                            <img src="./image/popular-artist/Guru Randhawa.jpg">
+                            <div><i class="fas fa-play" style="color:white ;width: 22%; height: 22%;"></i></div>
+                            <p>
+                                Guru Randhawa
+                            </p>
+                        </div>
+                    </a>
+                    <!-- sixth-artist  -->
+                    <a href="Playlist Screen.html">
+                        <div>
+                            <img src="./image/popular-artist/Drake.jpg">
+                            <div><i class="fas fa-play" style="color:white ;width: 22%; height: 22%;"></i></div>
+                            <p>
+                                Drake
+                            </p>
+                        </div>
+                    </a>
+                    <!-- seventh-card  -->
+                    <a href="Playlist Screen.html">
+                        <div>
+                            <img src="./image/popular-artist/Badshah.jpg">
+                            <div><i class="fas fa-play" style="color:white ;width: 22%; height: 22%;"></i></div>
+                            <p>
+                                Badshah
+                            </p>
+                        </div>
+                    </a>
+                    <a href="Playlist Screen.html">
+                        <div>
+                            <img src="./image/popular-artist/Billie Eilish.jpg">
+                            <div><i class="fas fa-play" style="color:white ;width: 22%; height: 22%;"></i></div>
+                            <p>
+                                Billie Eilish
+                            </p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- music-themes -->
+            <div class="music-themes">
+                <div class="station">
+                    <div class="bg1">
+                        <div class="bg2">
+                            <div class="bg3">
+                                <img src="./image/logos/website_logo.png" alt="">
+                                <p>Station</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="theme-main">
+                    <div class="theme-content">
+                        <img src="./image/theme/chill.jpg" alt="">
+                        <p>Chill</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="./image/theme/love.jpg" alt="">
+                        <p>Love</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="./image/theme/andrea-de-santis-i2BcaGXomv0-unsplash.jpg" alt="">
+                        <p>Retro</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="./image/theme/workcout.jpg" alt="">
+                        <p>Workout</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="./image/theme/rock.jpg" alt="">
+                        <p>Rock</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="./image/theme/pop.jpg" alt="">
+                        <p>Pop</p>
+                    </div>
+                </div>
+            </div>
+            <!-- music themes 2 -->
+            <div class="music-themes-2">
+                <div class="mood">
+                    <div class="mood-content">
+                        <span>Party</span>
+                    </div>
+                </div>
+                <div class="mood">
+                    <div class="mood-content">
+                        <span>Electronic</span>
+                    </div>
+                </div>
+                <div class="mood">
+                    <div class="mood-content">
+                        <span>Road Trip</span>
+                    </div>
+                </div>
+            </div>
+            <!-- latest-release in differnt language  -->
+            <!-- latest realese in english -->
+            <div class="language  English">
+                <h1 class="language-heading">
+                    Latest English
+                </h1>
+                <div class="language-content">
+                    <div class="language-content-list">
+                        <img src="./image/latest english/Cooped-Up-.jpg" alt="">
+                        <p style="font-size: 1.3vw;">Cooped Up</p>
+                        <p style="font-size: 1.1vw;">Post Malone </p>
+                    </div>
+                    <div class="language-content-list">
+                        <img src="./image/latest english/GOT7-.jpg" alt="">
+                        <p style="font-size: 1.3vw;">Truth</p>
+                        <p style="font-size: 1.1vw;">Got7 </p>
+                    </div>
+                    <div class="language-content-list">
+                        <img src="./image/latest english/Honest-.jpg" alt="">
+                        <p style="font-size: 1.3vw;">Honest</p>
+                        <p style="font-size: 1.1vw;">Justin Bieber </p>
+                    </div>
+                    <div class="language-content-list">
+                        <img src="./image/latest english/Love-Me-More.jpg" alt="">
+                        <p style="font-size: 1.3vw;">Love Me More</p>
+                        <p style="font-size: 1.1vw;">Sam Smith </p>
+                    </div>
+                    <div class="language-content-list">
+                        <img src="./image/latest english/Slidin-.jpg" alt="">
+                        <p style="font-size: 1.3vw;">Slidin</p>
+                        <p style="font-size: 1.1vw;">Jason Derulo</p>
+                    </div>
+                    <div class="language-content-list">
+                        <img src="./image/latest english/So-Far-So-Good.jpg" alt="">
+                        <p style="font-size: 1.3vw;">So Far So Good</p>
+                        <p style="font-size: 1.1vw;">The Chainsmokers </p>
+                    </div>
+                    <div class="language-content-list">
+                        <img src="./image/latest english/The-Drum-.jpg" alt="">
+                        <p style="font-size: 1.3vw;">The Drum</p>
+                        <p style="font-size: 1.1vw;">Alan Walker </p>
+                    </div>
+                    <div class="language-content-list">
+                        <img src="./image/latest english/Vegas-From-.jpg" alt="">
+                        <p style="font-size: 1.3vw;">Vagas</p>
+                        <p style="font-size: 1.1vw;">Doja Cat </p>
+                    </div>
+                    <div class="language-content-list">
+                        <img src="./image/latest english/Hold-My-Hand-.jpg" alt="">
+                        <p style="font-size: 1.3vw;">Hold My Hand</p>
+                        <p style="font-size: 1.1vw;">Lady Gaga </p>
+                    </div>
+                    <div class="language-content-list">
+                        <img src="./image/latest english/This-Love-.jpg" alt="">
+                        <p style="font-size: 1.3vw;">This Love</p>
+                        <p class="light-font" style="font-size: 1.1vw;">Taylor Swift </p>
+                    </div>
+                </div>
+            </div>
+            <!-- latest realese in hindi  -->
+            <div class="language  hindi">
+                <h1 class="language-heading">
+                    Latest Hindi
+                </h1>
+                <div class="language-content">
+                    <div class="language-content-list">
+                        <img src="./image/latest hindi/De Taali.jpg" alt="">
+                        <p style="font-size: 1.3vw;">De Taali</p>
+                        <p style="font-size: 1.1vw;">Armaan Malik, Pritam, Yo Yo Honey Singh, Shashwat Singh </p>
+                    </div>
+                    <div class="language-content-list">
+                        <img src="./image/latest hindi/nikamma.jpg" alt="">
+                        <p style="font-size: 1.3vw;">Nikamma</p>
+                        <p style="font-size: 1.1vw;">Javed - Mohsin, Dev Negi, Payal Dev, Deane Sequeira </p>
+                    </div>
+                    <div class="language-content-list">
+                        <img src="./image/latest hindi/RaRarakkamma.jpg" alt="">
+                        <p style="font-size: 1.3vw;">Ra Ra Rakkamma</p>
+                        <p style="font-size: 1.1vw;">Nakash Aziz, Sunidhi Chauhan </p>
+                    </div>
+                    <div class="language-content-list">
+                        <img src="./image/latest hindi/Main ki kara.jpg" alt="">
+                        <p style="font-size: 1.3vw;">Main Ki Karaan?</p>
+                        <p style="font-size: 1.1vw;">Sonu Nigam, Pritam, Amitabh Bhattacharya, Romy </p>
+                    </div>
+                    <div class="language-content-list">
+                        <img src="./image/latest hindi/Designer.jpg" alt="">
+                        <p style="font-size: 1.3vw;">Designer</p>
+                        <p style="font-size: 1.1vw;">Guru Randhawa, Yo Yo Honey Singh</p>
+                    </div>
+                    <div class="language-content-list">
+                        <img src="./image/latest hindi/Ektarfa.jpg" alt="">
+                        <p style="font-size: 1.3vw;">Ektarfa</p>
+                        <p style="font-size: 1.1vw;">King </p>
+                    </div>
+                    <div class="language-content-list">
+                        <img src="./image/latest hindi/Matth mai.jpg" alt="">
+                        <p style="font-size: 1.3vw;">Matth Maila</p>
+                        <p style="font-size: 1.1vw;">Nakul Abhyankar </p>
+                    </div>
+                    <div class="language-content-list">
+                        <img src="./image/latest hindi/aigiri.jpg" alt="">
+                        <p style="font-size: 1.3vw;">Aigiri Nandini</p>
+                        <p style="font-size: 1.1vw;">Alpa Desai, Ashit Desai </p>
+                    </div>
+                    <div class="language-content-list">
+                        <img src="./image/latest hindi/Wapas.jpg" alt="">
+                        <p style="font-size: 1.3vw;">Wapas Aa Jao</p>
+                        <p style="font-size: 1.1vw;">Arjun Kanungo </p>
+                    </div>
+                    <div class="language-content-list">
+                        <img src="./image/latest hindi/Badal barse.jpg" alt="">
+                        <p style="font-size: 1.3vw;">Baadal Barse</p>
+                        <p style="font-size: 1.1vw;">Yasser Desai </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- queue section  -->
+        <aside class="queue">
+            <label for="more"><i class="fas fa-angle-double-left"></i></label>
+            <input type="checkbox" id="more">
+            <div class="aside-section">
+                <div class="queue-heading">
+                    <h1 >Playlist</h1>
+                    <h4><a href="#queue-opton-box">Queue <i class="fas fa-chevron-circle-down"></i></a></h4>
+                </div>
+                <div class="queue-option" id="queue-opton-box">
+                    <p><a href style="color:#3994f4; font-weight:bolder;">Playlists</a></p>
+                    
+                    <p><a href style="color:#3994f4; font-weight:bolder;">Favourite songs</a></p>
+                    
+                    <p><a href="#" style="color:#92c2f5; font-weight:bolder;">Close</a></p>
+                </div>
+                <div class="Playlist-content">
+                    <div class="playlist-item">
+
+                        <div class="playlist-left">
+                            <div style="margin-right: 4px; color: white; font-size: 1.3vw;">
+                                01
+                            </div>
+                            <div class="coverer">
+                                <img src="./image/queue/Atrangi-Re.jpg" alt="">
+                                <div class="play-btn">
+                                    <i class="fas fa-play play-bt" style="color: rgb(250, 250, 250); width: 20%; height: 20%; " ></i>
+                                </div>
+                                <div class="coverer-text">
+                                    <div >Rait Zara Si</div>
+                                    <p >Arijit Singh, Shashaa Tirupati</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <i class="far fa-heart" style="color: red; font-size: 1.3vw;"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+
+                        <div class="playlist-left">
+                            <div style="margin-right: 1px; color: white; font-size: 1.3vw;">
+                                02
+                            </div>
+                            <div class="coverer">
+                                <img src="./image/queue/BLACK-MAGIC-.jpg" alt="">
+                                <div class="play-btn">
+                                    <i class="fas fa-play play-bt" style="color: rgb(250, 250, 250); width: 20%; height: 20%; " ></i>
+                                </div>
+                                <div class="coverer-text">
+                                    <div >Black Magic</div>
+                                    <p >Hardwell</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <i class="far fa-heart" style="color: red; font-size: 1.3vw;"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+
+                        <div class="playlist-left">
+                            <div style="margin-right: 4px; color: white; font-size: 1.3vw;">
+                                03
+                            </div>
+                            <div class="coverer">
+                                <img src="./image/queue/Dope.jpg" alt="">
+                                <div class="play-btn">
+                                    <i class="fas fa-play play-bt" style="color: rgb(250, 250, 250); width: 20%; height: 20%;" ></i>
+                                </div>
+                                <div class="coverer-text">
+                                    <div >Dope</div>
+                                    <p >John Legend</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <i class="far fa-heart" style="color: red; font-size: 1.3vw;"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+
+                        <div class="playlist-left">
+                            <div style="margin-right: 4px; color: white; font-size: 1.3vw;">
+                                04
+                            </div>
+                            <div class="coverer">
+                                <img src="./image/queue/ESTILAZO-.jpg" alt="">
+                                <div class="play-btn">
+                                    <i class="fas fa-play play-bt" style="color: rgb(250, 250, 250); width: 20%; height: 20%; " ></i>
+                                </div>
+                                <div class="coverer-text">
+                                    <div >Estilazo</div>
+                                    <p > Marshmello, Tokischa ft. Marshmello & Tokischa </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <i class="far fa-heart" style="color: red; font-size: 1.3vw;"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+
+                        <div class="playlist-left">
+                            <div style="margin-right: 4px; color: white; font-size: 1.3vw;">
+                                05
+                            </div>
+                            <div class="coverer">
+                                <img src="./image/queue/G-O-A-T-feat-Ty-Dolla-ign-Bella-Alubo.jpg" alt="">
+                                <div class="play-btn">
+                                    <i class="fas fa-play play-bt" style="color: rgb(250, 250, 250); width: 20%; height: 20%; " ></i>
+                                </div>
+                                <div class="coverer-text">
+                                    <div >G.O.A.T</div>
+                                    <p > The Notorious B.I.G.(feat. Ty Dolla $ign & Bella Alubo) </p>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="right-content">
+                                <i class="far fa-heart" style="color: red; font-size: 1.3vw;"></i>
+                            </div>
+                    </div>
+                    <div class="playlist-item">
+
+                        <div class="playlist-left">
+                            <div style="margin-right: 4px; color: white; font-size: 1.3vw;">
+                                06
+                            </div>
+                            <div class="coverer">
+                                <img src="./image/queue/I-Hate-You-.jpg" alt="">
+                                <div class="play-btn">
+                                    <i class="fas fa-play play-bt" style="color: rgb(250, 250, 250); width: 20%; height: 20%; " ></i>
+                                </div>
+                                <div class="coverer-text">
+                                    <div >I Hate You</div>
+                                    <p >Oliver Tree</p>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="right-content">
+                                <i class="far fa-heart" style="color: red; font-size: 1.3vw;"></i>
+                            </div>
+                    </div>
+                    <div class="playlist-item">
+
+                        <div class="playlist-left">
+                            <div style="margin-right: 4px; color: white; font-size: 1.3vw;">
+                                07
+                            </div>
+                            <div class="coverer">
+                                <img src="./image/queue/Jersey-Hindi.jpg" alt="">
+                                <div class="play-btn">
+                                    <i class="fas fa-play play-bt" style="color: rgb(250, 250, 250); width: 20%; height: 20%;" ></i>
+                                </div>
+                                <div class="coverer-text">
+                                    <div >Maiiya Mainu</div>
+                                    <p >Sachet Tandon</p>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="right-content">
+                                <i class="far fa-heart" style="color: red; font-size: 1.3vw;"></i>
+                            </div>
+                    </div>
+                    <div class="playlist-item">
+
+                        <div class="playlist-left">
+                            <div style="margin-right: 4px; color: white; font-size: 1.3vw;">
+                                08
+                            </div>
+                            <div class="coverer">
+                                <img src="./image/queue/Overthinking.jpg" alt="">
+                                <div class="play-btn">
+                                    <i class="fas fa-play play-bt" style="color: rgb(250, 250, 250); width: 20%; height: 20%; " ></i>
+                                </div>
+                                <div class="coverer-text">
+                                    <div >Overthinking</div>
+                                    <p >Mabel, 24kgolden</p>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="right-content">
+                                <i class="far fa-heart" style="color: red; font-size: 1.3vw;"></i>
+                            </div>
+                    </div>
+                    <div class="playlist-item">
+
+                        <div class="playlist-left">
+                            <div style="margin-right: 4px; color: white; font-size: 1.3vw;">
+                                09
+                            </div>
+                            <div class="coverer">
+                                <img src="./image/queue/Savage-.jpg" alt="">
+                                <div class="play-btn">
+                                    <i class="fas fa-play play-bt" style="color: rgb(250, 250, 250); width: 20%; height: 20%; " ></i>
+                                </div>
+                                <div class="coverer-text">
+                                    <div >Savage</div>
+                                    <p > Tiësto, Deorro</p>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="right-content">
+                                <i class="far fa-heart" style="color: red; font-size: 1.3vw;"></i>
+                            </div>
+                    </div>
+                    <div class="playlist-item">
+
+                        <div class="playlist-left">
+                            <div style="margin-right: 4px; color: white; font-size: 1.3vw;">
+                                10
+                            </div>
+                            <div class="coverer">
+                                <img src="./image/queue/Table-No-21-.jpg" alt="">
+                                <div class="play-btn">
+                                    <i class="fas fa-play play-bt" style="color: rgb(250, 250, 250); width: 20%; height: 20%; " ></i>
+                                </div>
+                                <div class="coverer-text">
+                                    <div >Mann Mera</div>
+                                    <p>Gajendra Verma</p>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="right-content">
+                                <i class="far fa-heart" style="color: red; font-size: 1.3vw;"></i>
+                            </div>
+                    </div>
+                    <div class="playlist-item">
+
+                        <div class="playlist-left">
+                            <div style="margin-right: 4px; color: white; font-size: 1.3vw;">
+                                11
+                            </div>
+                            <div class="coverer">
+                                <img src="./image/queue/The-Way-That-Lovers-Do.jpg" alt="">
+                                <div class="play-btn">
+                                    <i class="fas fa-play play-bt" style="color: rgb(250, 250, 250); width: 20%; height: 20%; " ></i>
+                                </div>
+                                <div class="coverer-text">
+                                    <div >All I Need</div>
+                                    <p >Prateek Kuhad</p>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="right-content">
+                                <i class="far fa-heart" style="color: red; font-size: 1.3vw;"></i>
+                            </div>
+                    </div>
+                    <div class="playlist-item">
+
+                        <div class="playlist-left">
+                            <div style="margin-right: 4px; color: white; font-size: 1.3vw;">
+                                12
+                            </div>
+                            <div class="coverer">
+                                <img src="./image/queue/This-Hell-.jpg" alt="">
+                                <div class="play-btn">
+                                    <i class="fas fa-play play-bt" style="color: rgb(250, 250, 250); width: 20%; height: 20%; " ></i>
+                                </div>
+                                <div class="coverer-text">
+                                    <div >This Hell</div>
+                                    <p >Rina Sawayama</p>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="right-content">
+                                <i class="far fa-heart" style="color: red; font-size: 1.3vw;"></i>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <!-- footer section  -->
+    <footer>
+        <div class="active-songs">
+            <div class="song-img">
+                <img src="./image/latest hindi/aigiri.jpg" alt="">
+            </div>
+            <div class="song-desc">
+                <div>Aigiri</div>
+                <div >Alpa Desai, Ashit Desai</div>
+            </div>
+            <div class="like-icon">
+                <span>
+                    <i class="far fa-heart" style="color: white; font-size: 1.3vw;"></i>
+                </span>
+
+            </div>
+        </div>
+        <div class="player">
+            <div class="control">
+                <div><i class="fas fa-random" style="color: white; font-size: 1.5vw;"></i></div>
+                <div><i class="fas fa-step-backward" style="color: white; font-size: 1.5vw;"></i></div>
+                <div><i class="fas fa-pause-circle" style="color: white; font-size: 1.5vw;"></i></div>
+                <div><i class="fas fa-step-forward" style="color: white; font-size: 1.5vw;"></i></div>
+                <div><i class="fas fa-redo" style="color: white; font-size: 1.5vw;"></i></div>
+            </div>
+            <div id="slider">
+                <div class="slider-time">
+
+                    <div class="time">
+                        1.39
+                    </div>
+                    <div class="time">
+                        3.21
+                    </div>
+                </div>
+                <div class="slidercontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                </div>
+            </div>
+        </div>
+        <div class="volume-control">
+            <div>
+                <i class="fas fa-list-ul" style="color: white; font-size: 1.4vw;"></i>
+            </div>
+            <div>
+                <i class="fas fa-laptop" style="color: white; font-size: 1.4vw;"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up" style="color: white; font-size: 1.4vw;"></i>
+            </div>
+            <div class="slidecontainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div>
+                <i class="fas fa-expand-alt" style="color: white; font-size: 1.4vw;"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

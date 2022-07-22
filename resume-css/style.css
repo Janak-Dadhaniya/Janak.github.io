@@ -1,0 +1,773 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+    width: 100vw;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+#hemburgermenu{
+    visibility: hidden;    
+}
+@media screen and (max-width:572px) {
+
+    .nav-menu{
+        visibility: hidden;
+    }
+    #hemburgermenu{
+        visibility: visible;    
+    }
+    .menu-button{
+         color: white;
+    }
+    .hemburgericon{
+        position: relative;
+        display: block;
+        float: right;
+        top: -39px;
+        right: 5px;
+    }
+    .hemburgerlist{
+        display: none;
+        position: absolute;
+        background-color: gray;
+        min-width: 160px;
+        right: 0;
+    }
+    .hemburgerlist a{
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 1rem;
+    }
+    .hemburgericon:hover .hemburgerlist{
+        display: block;
+    }
+}
+
+/* Name and Social Icons*/
+
+#name-social-container {
+    margin-top: 10vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+.social-icons li a i {
+    /*color: red;*/
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+/*About Section*/
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+    position: center;
+}
+
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+}
+
+/*Section Classes*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+    color: #2857a4;
+}
+#section-heading {
+    color:  #2857a4;
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+
+/*Skills Section*/
+
+.skills-display {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill-progress {
+    width: 200px;
+    
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 2px #b9b9b9 ;
+    margin: 25px;
+    overflow: hidden;
+}
+
+.skill-progress > div {
+    border-radius: 20px 0px 0px 20px;
+  
+}
+
+.skill-name span {
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.mb-blue{
+background-color: #343478;
+
+}
+.mb-orange{
+    background-color: #ec4d1c;
+    
+}
+.mb-light-purple{
+    background-color: #93738c;
+    
+}
+.mb-teal{
+    background-color: #0b8176;
+
+}
+
+
+
+
+/* experience */
+  #experience{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+#experience-heading{
+    display:flex;
+    justify-content:center;
+     color:#2857a4;
+}
+#work-section{
+  display:flex;
+  flex-direction: row;
+}
+.timeline{
+    width:75%;
+    /* height:75vh; */
+    
+    position:relative;
+    margin: 0px auto;
+    
+}
+.timelinebox{
+    position:relative;
+    width:40%;
+    left: 5%;
+    min-height:150px;
+    margin:5px;
+    /* border:2px solid black; */
+}
+.compney-details{
+    height:100px;
+    
+    display:flex;
+    justify-content:space-between
+}
+.compney-logo{
+    width:20%;
+}
+.compney-logo img{
+    height:70%;
+}
+.compneyname{
+    color:#df6949;
+    
+}
+.compney-name{
+    display:flex;
+    flex-direction:column;
+    align-items:end;
+    /* max-width: 250px; */
+    width: auto;
+   
+}
+.compney-name h6{
+    padding:0;
+    margin:0 0 10px 0;
+    font-size:1.1rem;
+    
+}
+.compney-name p{
+    font-size:1rem;
+    margin:0;
+    
+}
+.timelinebox p{
+    font-size:1rem;
+}
+#timeline-devider{
+  position: absolute;
+  top:10%;
+  height: 73%;
+  width: 0;
+  border: 1px dashed #94d3fd;
+  right: 50%;
+}
+.timeline-traveler{
+  
+  position: sticky;
+  top: 10%;
+  color:#2857a4;
+  transform: rotate(90deg);
+    z-index:2;
+}
+
+.timelinebox:nth-child(2n){
+    left:53%;
+}
+.timelinebox:nth-child(2n)::after{
+    content:'';
+    position:absolute;
+    top:35%;
+    left:-10%;
+    border-radius:50%;
+    width:0.5rem;
+    height:0.5rem;
+    background-color:gray;
+    z-index:1;
+}
+.timelinebox:nth-child(2n+1)::after{
+    content:'';
+    position:absolute;
+    top:35%;
+    right:-12%;
+    border-radius:50%;
+    width:0.5rem;
+    height:0.5rem;
+    background-color:gray;
+    z-index:1;
+}
+/* education */
+#education{
+    /* background-color:#efefef; */
+    padding:20px 0px;
+}
+
+/* <768px css */
+@media screen and (max-width:880px) {
+    body{
+        font-size: 20px;
+    }
+    #body-header{
+        height:45vh;
+    }
+    
+    
+    #timeline-devider{
+        left:5%;
+    }
+    .timelinebox{
+        position:relative;
+        width:80%;
+        left: 12%;
+        min-height:150px;
+        margin:5px;
+        /* border:2px solid black; */
+    }
+    .timelinebox:nth-child(2n){
+        left:12%;
+    }
+    .timelinebox::after{
+        left:-10.5% !important;
+    }
+    #name-social-container {
+        margin-top: -5vh;
+    }
+   
+    #my-image {
+        margin-top: -15vh;
+    }
+    .compney-logo img {
+        height: 50%;
+    }
+   
+
+}
+/* Portfolio */
+#portfolio{
+   display:flex;
+    flex-direction:column;
+    align-items:center;
+    
+    
+}
+#portfolio-heading{
+    display:flex;
+    justify-content:center;
+}
+#portfolio-heading h3{
+    color: #2857a4;
+}
+
+#portfolio-list{
+    width:85vw;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    
+}
+#portfolio-list a{
+    text-decoration: none;
+}
+#portfolio-list a span{
+    color:#2857a4 ;
+
+}
+#portfolio1{
+     height:250px;
+    width:300px;
+    margin:10px 65px 10px 65px;
+    font-size:21px;
+    background-image:url('../1 contact list/PicsArt_07-20-03.28.02.png');
+    background-size:cover;
+    background-position:center;
+}
+#portfolio1 span{
+    visibility:hidden; 
+}
+#portfolio1:hover{
+    background-color:lightgray;
+    box-shadow: 0px 0px 12px 4px rgb(160, 216, 235);
+}
+#portfolio1:hover span{
+    visibility:visible;
+    
+}
+#portfolio2{
+	height:250px;
+    width:300px;
+    margin:10px 65px 10px 65px;
+    font-size:21px; 
+    background-image:url("../2 4digit counter/PicsArt_07-20-03.49.08.png");
+    background-size:cover;
+    background-position:center;
+    
+}
+#portfolio2 span{
+    visibility:hidden;
+}
+#portfolio2:hover{
+    background-color:lightgray;
+    box-shadow: 0px 0px 12px 4px rgb(160, 216, 235);
+}
+#portfolio2:hover span{
+    visibility:visible;
+}
+
+#portfolio3{
+   height:250px;
+    width:300px;
+    margin:10px 65px 10px 65px;
+    font-size:21px;  
+    background-image:url("../3 catch me if you can/PicsArt_07-20-09.16.18.png");
+    background-size:cover;
+    background-position:center;
+}
+#portfolio3 span{
+    visibility:hidden;
+}
+#portfolio3:hover{
+    background-color:lightgray;
+    box-shadow: 0px 0px 12px 4px rgb(160, 216, 235);
+}
+#portfolio3:hover span{
+    visibility:visible;
+}
+#portfolio4{
+    height:250px;
+    width:300px;
+    margin:10px 65px 10px 65px;
+    font-size:21px;
+    background-image:url("../4 cn-todolist-c738ab363ba7fb7d6fd2ae1da19c263f83c81da5/PicsArt_07-20-03.36.31.png");
+    background-size:cover;
+    background-position:center;
+}
+#portfolio4 span{
+    visibility:hidden;
+}
+#portfolio4:hover{
+    background-color:lightgray;
+    box-shadow: 0px 0px 12px 4px rgb(160, 216, 235);
+}
+#portfolio4:hover span{
+    visibility:visible;
+}
+#portfolio5{
+    height:250px;
+    width:300px;
+    margin:10px 65px 10px 65px;
+    font-size:21px;
+    background-image:url("../5 coding-ninjas-music-player/PicsArt_07-20-09.19.28.png");
+    background-size:cover;
+    background-position:center;
+}
+#portfolio5 span{
+    visibility:hidden;
+}
+#portfolio5:hover{
+    background-color:lightgray;
+    box-shadow: 0px 0px 12px 4px rgb(160, 216, 235);
+}
+#portfolio5:hover span{
+    visibility:visible;
+}
+#portfolio6{
+    height:250px;
+    width:300px;
+    margin:10px 65px 10px 65px;
+    font-size:21px;
+    background-image:url("../6 calculater/PicsArt_07-20-09.21.51.png");
+    background-size:cover;
+    background-position:center;
+}
+#portfolio6 span{
+    visibility:hidden;
+}
+#portfolio6:hover{
+    background-color:lightgray;
+    box-shadow: 0px 0px 12px 4px rgb(160, 216, 235);
+}
+#portfolio6:hover span{
+    visibility:visible;
+}
+#portfolio7{
+    height:250px;
+    width:300px;
+    margin:10px 65px 10px 65px;
+    font-size:21px;
+    background-image:url("../7 percentage scrolled/PicsArt_07-20-03.52.27.png");
+    background-size:cover;
+    background-position:center;
+}
+#portfolio7 span{
+    visibility:hidden;
+}
+#portfolio7:hover{
+    background-color:lightgray;
+    box-shadow: 0px 0px 12px 4px rgb(160, 216, 235);
+}
+#portfolio7:hover span{
+    visibility:visible;
+}
+#portfolio8{
+    height:250px;
+    width:300px;
+    margin:10px 65px 10px 65px;
+    font-size:21px;
+    background-image:url("../8 add data using j query/PicsArt_07-20-04.01.40.png");
+    background-size:cover;
+    background-position:center;
+}
+#portfolio8 span{
+    visibility:hidden;
+}
+#portfolio8:hover{
+    background-color:lightgray;
+    box-shadow: 0px 0px 12px 4px rgb(160, 216, 235);
+}
+#portfolio8:hover span{
+    visibility:visible;
+}
+#portfolio9{
+    height:250px;
+    width:300px;
+    margin:10px 65px 10px 65px;
+    font-size:21px;
+    background-image:url("../9  ping pong game/ping.png");
+    background-size:cover;
+    background-position:center;
+}
+#portfolio9 span{
+    visibility:hidden;
+}
+#portfolio9:hover{
+    background-color:lightgray;
+    box-shadow: 0px 0px 12px 4px rgb(160, 216, 235);
+}
+#portfolio9:hover span{
+    visibility:visible;
+}
+@media screen and (max-width:768px) {
+    #portfolio-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    #portfolio-list{
+        width: 95vw;
+    }
+    #portfolio1 {
+        height: 200px;
+        width: 210px;
+    }
+    #portfolio2 {
+        height: 200px;
+        width: 210px;
+    }
+    #portfolio3 {
+        height: 200px;
+        width: 210px;
+    }
+    #portfolio4 {
+        height: 200px;
+        width: 210px;
+    }
+    #portfolio5 {
+        height: 200px;
+        width: 210px;
+    }
+    #portfolio6 {
+        height: 200px;
+        width: 210px;
+    }#portfolio7 {
+        height: 200px;
+        width: 210px;
+    }#portfolio8 {
+        height: 200px;
+        width: 210px;
+    }#portfolio9 {
+        height: 200px;
+        width: 210px;
+    }
+}
+/* contact */
+#contact{
+   margin-top:40px;
+    background-image:linear-gradient(45deg,#2857a4, #403066);
+    padding-bottom:50px
+}
+#contact-heading{
+    display:flex;
+    justify-content:center;
+    color:white;
+   
+}
+#contact-info{
+    display:flex;
+    
+}
+#contact-form{
+    width:50vw;
+    display:flex;
+    justify-content:center;
+    
+}
+#contact-input{
+    width:30vw;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    
+}
+#contact-input input{
+    padding:10px 0px;
+    margin-top:10px;
+    font-size:1rem;
+	border:none;
+    
+    border-bottom:2px solid white;
+    background-color:unset;
+    
+    
+}
+
+#contact-input textarea{
+    padding:20px 0px;
+    font-size:1rem;
+	border:none;
+    border-bottom:2px solid white;
+    background-color:unset;
+    
+}
+
+#contact-input button{
+    width:150px;
+    padding:7px;
+    margin: 30px auto;
+    background-color:unset;
+    border:2px solid white;
+    color:white;
+}
+#contact-details{
+    width:50vw;
+    padding:40px;
+}
+#contact-details h6{
+    margin:0px;
+    color:white;
+}
+#contact-details p{
+    font-size:1rem;
+    color:white;
+}
+#contact div .social-icons li a i{
+    margin:20px;
+    font-size:1.2rem;
+} 
+@media screen and (max-width:768px) {
+    #contact-info{
+        flex-direction: column;
+        
+        align-items: center;
+    }
+    
+    #contact-form{
+        width: 80vw;
+        
+        justify-content: center;
+    }
+    #contact-input{
+        width:100%;
+    }
+    #contact-details{
+        width: 80vw;
+    }
+    .social-icons li a i {
+        padding: 5;
+    }
+    .horizontal-list li {
+        margin: 0 2px 0 0;
+    }
+    #contact div .social-icons li a i {
+        margin: 8px;
+    }
+}
+@media screen and (max-width:380px) {
+    .compney-logo img{
+        height: 40%;
+    }
+    .compney-name h6{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+    .timelinebox{
+        width: 100%;
+    }
+    .timelinebox p{
+        font-size: 0.9rem;
+    }
+}
